@@ -1,0 +1,15 @@
+
+.container_pres {
+    justify-content: center;
+    height: 100vm;
+    width: 100vh;
+}
+
+.navbar, .navbar-expand-lg, .navbar-dark, .bg-primary {
+    background-color: #4C5067;
+}
+
+.btn-soiree {
+    background: #4C5067;
+    border-radius: 52px;
+}
