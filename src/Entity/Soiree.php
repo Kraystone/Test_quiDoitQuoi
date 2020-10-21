@@ -25,13 +25,13 @@ class Soiree
     private $nom;
 
     /**
-     * @ORM\OneToMany(targetEntity=Personne::class, mappedBy="personne_de_la_soiree")
+     * @ORM\OneToMany(targetEntity=Personne::class, mappedBy="soiree")
      */
-    private $personne_de_la_soiree;
+    private $soiree;
 
     public function __construct()
     {
-        $this->personne_de_la_soiree = new ArrayCollection();
+        $this->soiree = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -54,28 +54,28 @@ class Soiree
     /**
      * @return Collection|Personne[]
      */
-    public function getPersonneDeLaSoiree(): Collection
+    public function getSoiree(): Collection
     {
-        return $this->personne_de_la_soiree;
+        return $this->soiree;
     }
 
-    public function addPersonneDeLaSoiree(Personne $personneDeLaSoiree): self
+    public function addSoiree(Personne $soiree): self
     {
-        if (!$this->personne_de_la_soiree->contains($personneDeLaSoiree)) {
-            $this->personne_de_la_soiree[] = $personneDeLaSoiree;
-            $personneDeLaSoiree->setPersonneDeLaSoiree($this);
+        if (!$this->soiree->contains($soiree)) {
+            $this->soiree[] = $soiree;
+            $soiree->setSoiree($this);
         }
 
         return $this;
     }
 
-    public function removePersonneDeLaSoiree(Personne $personneDeLaSoiree): self
+    public function removeSoiree(Personne $soiree): self
     {
-        if ($this->personne_de_la_soiree->contains($personneDeLaSoiree)) {
-            $this->personne_de_la_soiree->removeElement($personneDeLaSoiree);
+        if ($this->soiree->contains($soiree)) {
+            $this->soiree->removeElement($soiree);
             // set the owning side to null (unless already changed)
-            if ($personneDeLaSoiree->getPersonneDeLaSoiree() === $this) {
-                $personneDeLaSoiree->setPersonneDeLaSoiree(null);
+            if ($soiree->getSoiree() === $this) {
+                $soiree->setSoiree(null);
             }
         }
 

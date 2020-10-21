@@ -28,9 +28,9 @@ class Personne
     private $argent;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Soiree::class, inversedBy="personne_de_la_soiree")
+     * @ORM\ManyToOne(targetEntity=Soiree::class, inversedBy="soiree")
      */
-    private $personne_de_la_soiree;
+    private $soiree;
 
     public function getId(): ?int
     {
@@ -61,14 +61,14 @@ class Personne
         return $this;
     }
 
-    public function getPersonneDeLaSoiree(): ?Soiree
+    public function getSoiree(): ?Soiree
     {
-        return $this->personne_de_la_soiree;
+        return $this->soiree;
     }
 
-    public function setPersonneDeLaSoiree(?Soiree $personne_de_la_soiree): self
+    public function setSoiree(?Soiree $soiree): self
     {
-        $this->personne_de_la_soiree = $personne_de_la_soiree;
+        $this->soiree = $soiree;
 
         return $this;
     }
