@@ -1,15 +1,42 @@
-
-.container_pres {
-    justify-content: center;
-    height: 100vm;
-    width: 100vh;
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar, .navbar-expand-lg, .navbar-dark, .bg-primary {
-    background-color: #4C5067;
+div{
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.bg-primary {
+    background-color: #3F4253 !important;
+}
+
+.button{
+    padding: 5px;
 }
 
 .btn-soiree {
-    background: #4C5067;
+    background: #3F4253;
     border-radius: 52px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3F4253;
+    border-color: #3F4253;
+}
+.btn:hover {
+    color: #8a9199;
+    text-decoration: none;
 }
