@@ -36,3 +36,7 @@ div{
     color: #8a9199;
     text-decoration: none;
 }
+
+.fa, .fas {
+    color: white; !important;
+}
