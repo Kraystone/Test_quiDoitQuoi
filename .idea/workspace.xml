@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/soiree/ajouter.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SoireeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SoireeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/soiree/ajouter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/ajouter.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/soiree/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

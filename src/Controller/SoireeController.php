@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Soiree;
+use App\Form\SoireeType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -25,7 +26,7 @@ class SoireeController extends AbstractController
     public function ajouter(Request $request)
     {
         $soiree = new Soiree();
-        $form = $this->createForm(Soiree::class, $soiree);
+        $form = $this->createForm(SoireeType::class, $soiree);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();

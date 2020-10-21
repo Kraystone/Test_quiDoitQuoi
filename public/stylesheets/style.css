@@ -8,12 +8,26 @@
     margin: 0;
 }
 
+.fa, .fas {
+    color: white; !important;
+}
+
+#nav{
+    text-decoration: none;
+}
+
+h6{
+    color: white; !important;
+    text-decoration: none;
+}
+
 div{
     justify-items: center;
     justify-content: center;
     text-align: center;
     height: auto;
     width: auto;
+    margin-right: 5px;
 }
 
 .bg-primary {
@@ -37,6 +51,3 @@ div{
     text-decoration: none;
 }
 
-.fa, .fas {
-    color: white; !important;
-}
