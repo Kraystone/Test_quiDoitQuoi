@@ -1,9 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Ajouter une soirée</h1>
+
+    <h2>Ajouter une soirée</h2>
     {{ form(formulaire) }}
 
-    <a class="btn btn-warning" href="{{ path("home") }}">&lt;Retour à la liste</a>
+    <div>
+        <a class="btn btn-warning" href="{{ path("home") }}">&lt; Retour à la liste</a>
+    </div>
 
 {% endblock %}

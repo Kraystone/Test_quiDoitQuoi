@@ -27,7 +27,11 @@ div{
     text-align: center;
     height: auto;
     width: auto;
-    margin-right: 5px;
+    margin-right: 25px;
+}
+
+.btn-warning{
+    margin: 20px;
 }
 
 .bg-primary {
@@ -51,3 +55,9 @@ div{
     text-decoration: none;
 }
 
+h2{
+    font-family: Georgia;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
