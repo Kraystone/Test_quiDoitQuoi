@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="add table in index">
+    <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/soiree/ajouter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/ajouter.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/soiree/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +197,7 @@
       <workItem from="1603205922827" duration="6790000" />
       <workItem from="1603262943483" duration="3853000" />
       <workItem from="1603376194728" duration="3415000" />
-      <workItem from="1603440458140" duration="1600000" />
+      <workItem from="1603440458140" duration="2252000" />
     </task>
     <task id="LOCAL-00001" summary="text home présentation du site.">
       <created>1603219055248</created>
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603278447386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="conttroller CalculSoiree ok &#10;envoi sur index soiree qui affiche le tableau pour rentre les noms">
+      <created>1603442134123</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603442134123</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +249,8 @@
     <MESSAGE value="text home présentation du site." />
     <MESSAGE value="css page home juste nav butoon a changer" />
     <MESSAGE value="add table in index" />
-    <option name="LAST_COMMIT_MESSAGE" value="add table in index" />
+    <MESSAGE value="conttroller CalculSoiree ok &#10;envoi sur index soiree qui affiche le tableau pour rentre les noms" />
+    <option name="LAST_COMMIT_MESSAGE" value="conttroller CalculSoiree ok &#10;envoi sur index soiree qui affiche le tableau pour rentre les noms" />
   </component>
   <component name="WindowStateProjectService">
     <state x="578" y="292" key="#Composer" timestamp="1603136490545">
@@ -258,26 +265,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603441725363" />
-    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1603266449768">
+    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1603442133378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603266449768" />
+    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603442133378" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603186013575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603186013575" />
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1603266509642">
+    <state x="629" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1603442147729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1603266509642" />
+    <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1603442147729" />
     <state x="785" y="240" key="RollbackChangesDialog" timestamp="1603267021361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="240" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603267021361" />
-    <state x="2371" y="204" key="Vcs.Push.Dialog.v2" timestamp="1603278452467">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603442144091">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603266456837" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603442144091" />
     <state x="2371" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603278452467" />
   </component>
 </project>
