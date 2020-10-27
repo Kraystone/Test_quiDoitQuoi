@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscripton sur Qui Doit Quoi{% endblock %}
+
+{% block body %}
+    <h2>Connexion</h2>
+    <form action="{{ path('securite_connexion') }}" method="post">
+        <div class="form-group">
+            <input placeholder="Adresse mail .." type="text" class="form-control" required name="_username">
+        </div>
+        <div class="form-group">
+            <input placeholder="Mot de passe .." type="password" class="form-control" required name="_password">
+        </div>
+        <div class="form-group">
+            <button class="submit btn-sucess btn btn-primary">Connexion</button>
+
+        </div>
+    </form>
+    <a href="{{ path('securite_inscription') }}"><button  class="btn btn-secondary btn-inscription">S'inscrire</button></a>
+{% endblock %}
