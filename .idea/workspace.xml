@@ -19,21 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/securite/connexion.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/quiDoitQuoi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quiDoitQuoi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2020_13_25_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2020_13_25__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2020_13_29_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_10_2020_13_29__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" afterDir="false" />
+    <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="inscription ok&#10;connexion moyen">
+      <change beforePath="$PROJECT_DIR$/templates/securite/connexion.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/securite/connexion.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +228,7 @@
       <workItem from="1603698746382" duration="172000" />
       <workItem from="1603699800893" duration="938000" />
       <workItem from="1603744134676" duration="14000" />
-      <workItem from="1603807451325" duration="1589000" />
+      <workItem from="1603807451325" duration="1920000" />
     </task>
     <task id="LOCAL-00001" summary="text home présentation du site.">
       <created>1603219055248</created>
@@ -271,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603442134123</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="inscription ok&#10;connexion moyen">
+      <created>1603809376777</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603809376777</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +288,8 @@
     <MESSAGE value="css page home juste nav butoon a changer" />
     <MESSAGE value="add table in index" />
     <MESSAGE value="conttroller CalculSoiree ok &#10;envoi sur index soiree qui affiche le tableau pour rentre les noms" />
-    <option name="LAST_COMMIT_MESSAGE" value="conttroller CalculSoiree ok &#10;envoi sur index soiree qui affiche le tableau pour rentre les noms" />
+    <MESSAGE value="inscription ok&#10;connexion moyen" />
+    <option name="LAST_COMMIT_MESSAGE" value="inscription ok&#10;connexion moyen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="578" y="292" key="#Composer" timestamp="1603136490545">
