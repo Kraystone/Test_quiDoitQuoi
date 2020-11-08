@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Supprimer une soirée {{ soiree.nom }}</h1>
+
+    {{ form(formulaire) }}
+
+    <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Ajouter une nouvelle</a>
+
+{% endblock %}

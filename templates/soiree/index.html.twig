@@ -3,35 +3,33 @@
 {% block title %}Qui Doit Quoi ?{% endblock %}
 
 {% block body %}
-    <h1>Titre de la soiree</h1>
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th scope="col">Nom Personne</th>
-            <th scope="col">Argent</th>
-            <th scope="col">Ce que tu dois</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">Default</th>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr>
-            <th scope="row">Default</th>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        <tr>
-            <th scope="row">Default</th>
-            <td>Column content</td>
-            <td>Column content</td>
-        </tr>
-        </tbody>
-    </table>
 
+    <h3>Vous êtes sur la soirée : {{ soiree.nom }}</h3>
+    <table class="table">
+        <tr>
+            <th>Nom</th>
+            <th>Montant</th>
+            <th>Qui doit Quoi ?</th>
+        </tr>
+{#        {% for p in personne %}#}
+{#            <tr>#}
+{#                <td>{{ s.nom }}</td>#}
+{#                <td>{{ s.description }}</td>#}
+{#                <td>#}
+{#                    <a class="btn btn-sm btn-primary" href="{{ path("categories_modifier", {"id":c.id}) }}">Modifier</a>#}
+{#                    <a class="btn btn-sm btn-danger" href="{{ path("categories_supprimer", { "id":c.id }) }}">Supprimer<i class="fas fa-user-astronaut fa-1x"></i></a>#}
+{#                    <a class="btn btn-sm btn-warning" href="{{ path("chatons", { "idCategorie":c.id }) }}">Modifier <i class="fas fa-user-astronaut fa-1x"></i></a>#}
+{#                </td>#}
+{#            </tr>#}
+{#        {% endfor %}#}
+    </table>
     <div>
         <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>
     </div>
+    {% for s in soiree %}
+    <div>
+        <a class="btn btn-warning" href="{{path("soiree_supprimer",{"id":s.id})}}">&lt; Veut tu supprimer cette soirée ?</a>
+        <h1>fo</h1>
+    </div>
+    {% endfor %}
 {% endblock %}
