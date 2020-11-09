@@ -15,7 +15,7 @@
             </li>
             {% for s in soiree %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ path('soiree') }}">{{ s.nom }}</a>
+                    <a class="nav-link" href="{{ path('soiree_index',{"id":s.id}) }}">{{ s.nom }}</a>
                 </li>
             {% endfor %}
         </ul>

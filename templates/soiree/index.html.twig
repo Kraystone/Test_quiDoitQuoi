@@ -1,20 +1,40 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SoireeController!{% endblock %}
+{% block title %}Qui Doit Quoi ?{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h3>Vous êtes sur la soirée : {{ soiree.nom }}</h3>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/quiDoitQuoi/src/Controller/SoireeController.php'|file_link(0) }}">src/Controller/SoireeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/quiDoitQuoi/templates/soiree/index.html.twig'|file_link(0) }}">templates/soiree/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <table class="table">
+        <tr>
+            <th>Nom</th>
+            <th>Montant</th>
+            <th>Qui doit Quoi ?</th>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td>Content</td>
+            <td>Content</td>
+        </tr>
+    </table>
+    <div>
+        <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>
+    </div>
+    {% for s in soiree %}
+        <div>
+            <a class="btn btn-warning" href="{{path("soiree_supprimer",{"id":s.id})}}">&lt; Veut tu supprimer cette soirée ?</a>
+            <h1>fo</h1>
+        </div>
+    {% endfor %}
 {% endblock %}

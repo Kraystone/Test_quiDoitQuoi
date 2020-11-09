@@ -39,14 +39,14 @@ div{
 }
 
 .btn-soiree {
-    background: #3F4253;
+    background: #3F4253; !important;
     border-radius: 52px;
     text-decoration: none;
     padding: 10px;
 }
 
 .btn-primary:hover {
-    color: #fff;
+    color: #fff; !important;
     background-color: #3F4253; !important;
     border-color: #3F4253; !important;
 }
