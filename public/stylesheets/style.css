@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fa, .fas {
+    color: white; !important;
+}
+
+#nav{
+    text-decoration: none;
+}
+
+h6{
+    color: white; !important;
+    text-decoration: none;
+}
+
+div{
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin-right: 25px;
+}
+
+.btn-warning{
+    margin: 20px;
+}
+
+.bg-primary {
+    background-color: #3F4253 !important;
+}
+
+.btn-soiree {
+    background: #3F4253;
+    border-radius: 52px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #3F4253;
+    border-color: #3F4253;
+}
+.btn:hover {
+    color: #8a9199;
+    text-decoration: none;
+}
+
+h2{
+    font-family: Georgia;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.btn-inscription {
+    justify-content: center;
+}
