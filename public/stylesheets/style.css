@@ -47,8 +47,8 @@ div{
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #3F4253;
-    border-color: #3F4253;
+    background-color: #3F4253; !important;
+    border-color: #3F4253; !important;
 }
 .btn:hover {
     color: #8a9199;

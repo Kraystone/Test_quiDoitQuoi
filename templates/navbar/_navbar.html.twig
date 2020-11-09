@@ -13,11 +13,11 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
             </li>
-{#            {% for s in soiree %}#}
-{#                <li class="nav-item">#}
-{#                    <a class="nav-link" href="{{ path("soiree_index",{"id":s.id}) }}">{{ s.nom }}</a>#}
-{#                </li>#}
-{#            {% endfor %}#}
+            {% for s in soiree %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('soiree') }}">{{ s.nom }}</a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </nav>

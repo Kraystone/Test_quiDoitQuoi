@@ -11,11 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b225916a-13ff-4149-98c0-76f2c79b5e75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/NavbarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/NavbarController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SoireeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SoireeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SoireeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SoireeType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604959961478</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ajoute style">
+      <created>1604960593012</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604960593012</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,17 +222,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add entity soiree" />
     <MESSAGE value="Soiree + nav ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Soiree + nav ok" />
+    <MESSAGE value="ajoute style" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajoute style" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="404" y="0" key="CommitChangelistDialog2" timestamp="1604959960794">
+    <state x="404" y="0" key="CommitChangelistDialog2" timestamp="1604960592249">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="404" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604959960794" />
-    <state x="640" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1604959974879">
+    <state x="404" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604960592249" />
+    <state x="640" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1604960602774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="640" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1604959974879" />
+    <state x="640" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1604960602774" />
     <state x="158" y="65" key="MergeDialog" timestamp="1604959180250">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -234,10 +242,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="418" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1604959180276" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1604959970268">
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1604960599594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604959970268" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604960599594" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604956423491" />
   </component>
 </project>

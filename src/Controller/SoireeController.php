@@ -36,8 +36,8 @@ class SoireeController extends AbstractController
             return  $this -> redirectToRoute ( "home" );
         }
         return  $this -> render ( "soiree/ajouter.html.twig" , [
-        "formulaire" => $form -> createView ()
-            ]);
+            "formulaire" => $form -> createView ()
+        ]);
     }
 
 //    /**

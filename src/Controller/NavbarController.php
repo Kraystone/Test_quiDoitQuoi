@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class NavbarController extends AbstractController
 {
-    public function navbar(): Response
+    public function navbar()
     {
         //récupérer le repository
         $repository=$this->getDoctrine()->getRepository(Soiree::class);
@@ -17,7 +17,7 @@ class NavbarController extends AbstractController
         $soirees=$repository->findAll();
 
         return $this->render('navbar/_navbar.html.twig', [
-            "soirees"=>$soirees
+            "soiree"=>$soirees,
         ]);
     }
 }
