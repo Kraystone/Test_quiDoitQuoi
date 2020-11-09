@@ -1,20 +1,23 @@
-{% extends 'base.html.twig' %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div>
+        <a id="nav" href="{{ path('home') }}"><i class="fas fa-hand-holding-usd fa-2x"></i><br><h6>Qui Doit Quoi ?</h6>
+        </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-{% block title %}Hello NavbarController!{% endblock %}
-
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/quiDoitQuoi/src/Controller/NavbarController.php'|file_link(0) }}">src/Controller/NavbarController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/quiDoitQuoi/templates/navbar/_navbar.html.twig'|file_link(0) }}">templates/navbar/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+            </li>
+{#            {% for s in soiree %}#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{{ path("soiree_index",{"id":s.id}) }}">{{ s.nom }}</a>#}
+{#                </li>#}
+{#            {% endfor %}#}
+        </ul>
+    </div>
+</nav>

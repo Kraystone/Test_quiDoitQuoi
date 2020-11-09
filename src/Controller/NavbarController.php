@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class NavbarController extends AbstractController
 {
-    public function navbar()
+    public function navbar(): Response
     {
         //récupérer le repository
         $repository=$this->getDoctrine()->getRepository(Soiree::class);
