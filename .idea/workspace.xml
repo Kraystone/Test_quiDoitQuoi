@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="inscription ok&#10;connexion moyen">
-      <change afterPath="$PROJECT_DIR$/templates/soiree/supprimer.html.twig" afterDir="false" />
+    <list default="true" id="b1e59aca-3ab4-49cb-88a0-9d2eedfaf251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SoireeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SoireeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SoireeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SoireeType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Soiree.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Soiree.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/soiree/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +244,8 @@
       <workItem from="1604525943975" duration="1333000" />
       <workItem from="1604738250796" duration="21000" />
       <workItem from="1604738297608" duration="11515000" />
-      <workItem from="1604822422697" duration="1769000" />
+      <workItem from="1604822422697" duration="18114000" />
+      <workItem from="1604943271685" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="text home présentation du site.">
       <created>1603219055248</created>
@@ -283,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603809376777</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="form TableauSoirée Créer">
+      <created>1604826803578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604826803578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +313,8 @@
     <MESSAGE value="add table in index" />
     <MESSAGE value="conttroller CalculSoiree ok &#10;envoi sur index soiree qui affiche le tableau pour rentre les noms" />
     <MESSAGE value="inscription ok&#10;connexion moyen" />
-    <option name="LAST_COMMIT_MESSAGE" value="inscription ok&#10;connexion moyen" />
+    <MESSAGE value="form TableauSoirée Créer" />
+    <option name="LAST_COMMIT_MESSAGE" value="form TableauSoirée Créer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="578" y="292" key="#Composer" timestamp="1604520826215">
@@ -330,26 +337,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604743058240" />
-    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1603442133378">
+    <state x="301" y="0" key="CommitChangelistDialog2" timestamp="1604826802706">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603442133378" />
+    <state x="301" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604826802706" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604522779992">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604522779992" />
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1603442147729">
+    <state x="629" y="325" key="Github.Dialog.Accounts.Choose" timestamp="1604826826635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1603442147729" />
+    <state x="629" y="325" key="Github.Dialog.Accounts.Choose/0.0.1536.824@0.0.1536.824" timestamp="1604826826635" />
     <state x="785" y="240" key="RollbackChangesDialog" timestamp="1603267021361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="785" y="240" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603267021361" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603442144091">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604826822043">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603442144091" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604826822043" />
     <state x="2371" y="204" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603278452467" />
     <state x="493" y="190" key="run.anything.popup" timestamp="1604744556007">
       <screen x="0" y="0" width="1536" height="824" />

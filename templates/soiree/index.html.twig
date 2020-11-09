@@ -5,23 +5,45 @@
 {% block body %}
 
     <h3>Vous êtes sur la soirée : {{ soiree.nom }}</h3>
+
     <table class="table">
         <tr>
             <th>Nom</th>
             <th>Montant</th>
             <th>Qui doit Quoi ?</th>
         </tr>
-{#        {% for p in personne %}#}
-{#            <tr>#}
-{#                <td>{{ s.nom }}</td>#}
-{#                <td>{{ s.description }}</td>#}
-{#                <td>#}
-{#                    <a class="btn btn-sm btn-primary" href="{{ path("categories_modifier", {"id":c.id}) }}">Modifier</a>#}
-{#                    <a class="btn btn-sm btn-danger" href="{{ path("categories_supprimer", { "id":c.id }) }}">Supprimer<i class="fas fa-user-astronaut fa-1x"></i></a>#}
-{#                    <a class="btn btn-sm btn-warning" href="{{ path("chatons", { "idCategorie":c.id }) }}">Modifier <i class="fas fa-user-astronaut fa-1x"></i></a>#}
-{#                </td>#}
-{#            </tr>#}
-{#        {% endfor %}#}
+    </table>
+    <table class="table">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
     <div>
         <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>

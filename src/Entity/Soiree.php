@@ -81,4 +81,8 @@ class Soiree
 
         return $this;
     }
+
+    public function __toString() {
+        return "some string representation of your object";
+    }
 }

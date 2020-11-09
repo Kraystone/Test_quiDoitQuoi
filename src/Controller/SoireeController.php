@@ -3,9 +3,11 @@
 namespace App\Controller;
 
 
+use App\Entity\Personne;
 use App\Entity\Soiree;
 use App\Form\SoireeSupprimerType;
 use App\Form\SoireeType;
+use App\Form\TableauPersonneType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,13 +17,24 @@ class SoireeController extends AbstractController
     /**
      * @Route("/soiree/index/{id}", name="soiree_index")
      */
-    public function index($id)
+    public function index($id, Request $request)
     {
         $repo=$this->getDoctrine()->getRepository(Soiree::class);
         $soiree= $repo->find($id);
 
+        $perso = new Personne();
+        $form = $this->createForm(TableauPersonneType::class, $perso);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($perso);
+            $em->flush();
+            return $this->redirectToRoute("soiree_index");
+        }
+
         return $this->render('soiree/index.html.twig', [
             'soiree' => $soiree,
+            "form" => $form->createView(),
         ]);
     }
 
@@ -78,5 +91,6 @@ class SoireeController extends AbstractController
             "soiree"=>$soireesup,
         ]);
     }
+
 
 }
