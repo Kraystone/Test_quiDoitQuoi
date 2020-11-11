@@ -14,7 +14,7 @@ class SupprimerSoireeType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add("ok", SubmitType::class, ["label"=>"Enregistrer"])
+            ->add("ok", SubmitType::class, ["label"=>"Enregister"])
         ;
     }
 

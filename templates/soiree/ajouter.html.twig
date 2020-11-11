@@ -3,7 +3,17 @@
 {% block body %}
 
     <h2>Ajouter une soirée</h2>
-    {{ form(formulaire) }}
+
+    {{ form_start(formulaire) }}
+
+    <div class="form-group">
+        <label for="">Nom</label>
+        {{ form_widget(formulaire.nom) }}
+    </div>
+
+    <button type="submit" class="btn btn-success">Ajouter</button>
+
+    {{ form_end(formulaire) }}
 
     <div>
         <a class="btn btn-warning" href="{{ path("home") }}">&lt; Retour à la liste</a>
