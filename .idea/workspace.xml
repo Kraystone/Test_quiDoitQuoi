@@ -6,17 +6,29 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b225916a-13ff-4149-98c0-76f2c79b5e75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Form/SupprimerSoireeType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/soiree/supprimer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Personne.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/AjouterPersonneSoireeType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PersonneRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/soiree/soireeAjouterPersonne.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201109211639.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201111170825.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SoireeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SoireeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Soiree.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Soiree.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SupprimerSoireeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SupprimerSoireeType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/soiree/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/soiree/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +36,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -165,7 +177,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../symfony/ChatonsBDD_B21" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="no" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,6 +198,10 @@
       <option name="presentableId" value="Default" />
       <updated>1604955845353</updated>
       <workItem from="1604955846543" duration="680000" />
+      <workItem from="1605082678287" duration="1116000" />
+      <workItem from="1605084016648" duration="15765000" />
+      <workItem from="1605106554539" duration="357000" />
+      <workItem from="1605112726880" duration="2679000" />
     </task>
     <task id="LOCAL-00001" summary="add entity soiree">
       <created>1604956404846</created>
@@ -239,10 +265,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="valide nav" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604962114531">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="625" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605092188265">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="500" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604962114531" />
+    <state x="625" y="211" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605092188265" />
     <state x="404" y="0" key="CommitChangelistDialog2" timestamp="1604961444973">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -268,5 +295,13 @@
     </state>
     <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604961451752" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604956423491" />
+    <state x="2102" y="-15" width="1403" height="633" maximized="true" key="dock-window-1" timestamp="1605114749211">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2102" y="-15" width="1403" height="633" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605114749211" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605104959641">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605104959641" />
   </component>
 </project>

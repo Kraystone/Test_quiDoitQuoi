@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h2>Ajouter une personne a la soirée</h2>
+    {{ form(formulaire) }}
+
+    <div>
+        <a class="btn btn-warning" href="{{ path("soiree_index",{"id":soiree.id}) }}">&lt; Retour à la liste</a>
+    </div>
+
+{% endblock %}

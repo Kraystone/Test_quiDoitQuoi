@@ -2,12 +2,17 @@
 
 namespace App\Controller;
 
+use App\Entity\Personne;
 use App\Entity\Soiree;
+use App\Form\AjouterPersonneSoireeType;
 use App\Form\SoireeType;
 use App\Form\SupprimerSoireeType;
+use Doctrine\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class SoireeController extends AbstractController
 {
@@ -16,8 +21,8 @@ class SoireeController extends AbstractController
      */
     public function index($id, Request $request)
     {
-        $repo=$this->getDoctrine()->getRepository(Soiree::class);
-        $soiree= $repo->find($id);
+        $repo = $this->getDoctrine()->getRepository(Soiree::class);
+        $soiree = $repo->find($id);
 
         return $this->render('soiree/index.html.twig', [
             'soiree' => $soiree,
@@ -25,22 +30,22 @@ class SoireeController extends AbstractController
     }
 
     /**
-    * @Route("/soiree/ajouter", name="soiree_ajouter")
-    */
+     * @Route("/soiree/ajouter", name="soiree_ajouter")
+     */
 
     public function ajouter(Request $request)
     {
         $soiree = new Soiree();
-        $form = $this -> createForm ( SoireeType:: class, $soiree );
-        $form -> handleRequest ( $request );
-        if( $form -> isSubmitted () && $form -> isValid ()) {
-        $em = $this -> getDoctrine () -> getManager ();
-            $em -> persist ( $soiree );
-            $em -> flush ();
-            return  $this -> redirectToRoute ( "home" );
+        $form = $this->createForm(SoireeType:: class, $soiree);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($soiree);
+            $em->flush();
+            return $this->redirectToRoute("home");
         }
-        return  $this -> render ( "soiree/ajouter.html.twig" , [
-            "formulaire" => $form -> createView ()
+        return $this->render("soiree/ajouter.html.twig", [
+            "formulaire" => $form->createView()
         ]);
     }
 
@@ -48,19 +53,20 @@ class SoireeController extends AbstractController
      * @Route("/soiree/supprimer/{id}", name="soiree_supprimer")
      */
 
-    public function supprimer($id, Request $request){
-        $repo=$this->getDoctrine()->getRepository(Soiree::class);
-        $soireesup= $repo->find($id);
+    public function supprimer($id, Request $request)
+    {
+        $repo = $this->getDoctrine()->getRepository(Soiree::class);
+        $soireesup = $repo->find($id);
 
         //création du formulaire
-        $form=$this->createForm(SupprimerSoireeType::class, $soireesup);
+        $form = $this->createForm(SupprimerSoireeType::class, $soireesup);
 
 
         //recup du POST
         $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
             //recup de l'entitymanager -> gere les objet
-            $em=$this->getDoctrine()->getManager();
+            $em = $this->getDoctrine()->getManager();
 
             //dire au manager qu'on veut garder notre objet en BDD
             $em->remove($soireesup);
@@ -73,9 +79,32 @@ class SoireeController extends AbstractController
 
         }
 
-        return $this->render("soiree/supprimer.html.twig",[
+        return $this->render("soiree/supprimer.html.twig", [
             "formulaire" => $form->createView(),
-            "soiree"=>$soireesup,
+            "soiree" => $soireesup,
+        ]);
+    }
+    /**
+     * @Route("/soiree/ajouter_personne/{id}", name="soiree_ajouter_personne")
+     */
+
+    public function ajouterUnePersonne(Request $request, $id)
+    {
+        $repo = $this->getDoctrine()->getRepository(Soiree::class);
+        $soiree = $repo->find($id);
+
+        $personne = new Personne();
+        $form = $this->createForm(AjouterPersonneSoireeType:: class, $personne);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($personne);
+            $em->flush();
+            return $this->redirectToRoute("soiree_index", ['id' => $id]);
+        }
+        return $this->render("soiree/soireeAjouterPersonne.html.twig", [
+            "formulaire" => $form->createView(),
+            "soiree" => $soiree,
         ]);
     }
 }

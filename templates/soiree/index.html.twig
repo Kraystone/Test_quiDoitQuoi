@@ -31,10 +31,12 @@
     <div>
         <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>
     </div>
-    {% for s in soiree %}
-        <div>
-            <a class="btn btn-warning" href="{{path("soiree_supprimer",{"id":s.id})}}">&lt; Veut tu supprimer cette soirée ?</a>
-            <h1>fo</h1>
-        </div>
-    {% endfor %}
+    <div>
+        <a class="btn btn-success" href="{{ path("soiree_ajouter_personne",{"id":soiree.id}) }}">&lt; Ajouter une
+            personne a la soirée</a>
+    </div>
+    <div>
+        <a class="btn btn-warning" href="{{ path("soiree_supprimer",{"id":soiree.id}) }}">&lt; Veut tu supprimer cette
+            soirée ?</a>
+    </div>
 {% endblock %}
