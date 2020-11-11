@@ -4,37 +4,33 @@
 
 {% block body %}
 
-    <h3>Vous êtes sur la soirée : {{ soiree.nom }}</h3>
-
-    <table class="table">
-        <tr>
-            <th>Nom</th>
-            <th>Montant</th>
-            <th>Qui doit Quoi ?</th>
-        </tr>
-        <tr>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-    </table>
-    <div>
-        <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>
-    </div>
-    {% for s in soiree %}
+    <h3>Vous êtes sur la soirée : {{ soiree.nom }}</h3><br>
+        <table class="table">
+            <tr>
+                <th>Nom</th>
+                <th>Montant</th>
+                <th>Qui doit Quoi ?</th>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        </table>
         <div>
-            <a class="btn btn-warning" href="{{path("soiree_supprimer",{"id":s.id})}}">&lt; Veut tu supprimer cette soirée ?</a>
-            <h1>fo</h1>
+            <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>
         </div>
-    {% endfor %}
+        <div>
+            <a class="btn btn-primary" href="{{ path("soiree_supprimer",{"id":soiree.id}) }}">&lt; Veut tu supprimer cette soirée ?</a>
+        </div>
 {% endblock %}

@@ -69,7 +69,7 @@ class SoireeController extends AbstractController
             $em->flush();
 
             //aller a la liste des catégories
-            return $this->redirectToRoute("soiree_supprimer");
+            return $this->redirectToRoute("soiree_ajouter");
 
         }
 
