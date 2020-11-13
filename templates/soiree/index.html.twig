@@ -12,29 +12,28 @@
             <th>Montant</th>
             <th>Qui doit Quoi ?</th>
         </tr>
+        {% for p in personne %}
+            <tr>
+                <td>{{ p.nom }}</td>
+                <td>{{ p.argent }}</td>
+                <td>#</td>
+            </tr>
+        {% endfor %}
+        <tfoot>
         <tr>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
+            <th>Total</th>
+            <td></td>
+            <td>{% set totalArgent = (  ) %}</td>
         </tr>
-        <tr>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
-        <tr>
-            <td>Content</td>
-            <td>Content</td>
-            <td>Content</td>
-        </tr>
+        </tfoot>
     </table>
     <div>
-        <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">&lt; Créer une nouvelle soirée</a>
+        <a class="btn btn-warning" href="{{ path("soiree_ajouter") }}">Créer une nouvelle soirée</a>
+
+        <a class="btn btn-warning"
+           href="{{ path("soiree_ajouter_personne",{"id":soiree.id}) }}">Ajouter une personne</a>
+
+        <a class="btn btn-warning" href="{{ path("soiree_supprimer",{"id":soiree.id}) }}">Veut tu supprimer cette
+            soirée ?</a>
     </div>
-    {% for s in soiree %}
-        <div>
-            <a class="btn btn-warning" href="{{path("soiree_supprimer",{"id":s.id})}}">&lt; Veut tu supprimer cette soirée ?</a>
-            <h1>fo</h1>
-        </div>
-    {% endfor %}
 {% endblock %}

@@ -19,13 +19,18 @@ class SoireeController extends AbstractController
     /**
      * @Route("/soiree/index/{id}", name="soiree_index")
      */
-    public function index($id, Request $request)
+    public function index(Soiree $id, Request $request)
     {
         $repo = $this->getDoctrine()->getRepository(Soiree::class);
         $soiree = $repo->find($id);
 
+        $personne = $soiree->getIdPersonne();
+
+
+
         return $this->render('soiree/index.html.twig', [
             'soiree' => $soiree,
+            "personne" => $personne,
         ]);
     }
 
@@ -88,23 +93,22 @@ class SoireeController extends AbstractController
      * @Route("/soiree/ajouter_personne/{id}", name="soiree_ajouter_personne")
      */
 
-    public function ajouterUnePersonne(Request $request, $id)
+    public function ajouterUnePersonne(Soiree $id, Request $request)
     {
-        $repo = $this->getDoctrine()->getRepository(Soiree::class);
-        $soiree = $repo->find($id);
-
         $personne = new Personne();
         $form = $this->createForm(AjouterPersonneSoireeType:: class, $personne);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $personne->setIdSoiree($id);
             $em->persist($personne);
             $em->flush();
-            return $this->redirectToRoute("soiree_index", ['id' => $id]);
+            return $this->redirectToRoute("soiree_index", ['id' => $personne->getIdSoiree()->getId()]);
         }
+//        $personne = $soiree->getIdPersonne();
         return $this->render("soiree/soireeAjouterPersonne.html.twig", [
             "formulaire" => $form->createView(),
-            "soiree" => $soiree,
+            "id" => $id,
         ]);
     }
 }
